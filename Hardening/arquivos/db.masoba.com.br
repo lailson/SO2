@@ -1,0 +1,20 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+$ORIGIN masoba.com.br.
+@	IN	SOA	masoba.com.br. root.masoba.com.br. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.masoba.com.br.
+@	IN	MX	10 mail.masoba.com.br.
+mail	IN	A	172.16.32.6
+ns	IN	A	172.16.32.7
+haldus	IN	A	172.16.32.2
+sirius	IN	A	172.16.32.3
+naoes	IN	A	172.16.32.4
+betria	IN	A	172.16.32.5

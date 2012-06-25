@@ -1,0 +1,19 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "masoba.com.br"{
+	notify yes;
+	type master;
+	file "db.masoba.com.br";
+};
+
+zone "30.10.172.in-addr.arpa" {
+	notify yes;
+	type master;
+	file "db.30.10.172";
+};
